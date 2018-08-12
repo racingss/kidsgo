@@ -20,7 +20,7 @@ class MainViewController: UITabBarController {
         let img = UIImageView()
         img.frame = CGRect(x: 0, y: screenH - tabbarH, width: screenW, height: tabbarH)
         img.image = UIImage(named: "bgimg")
-        img.isUserInteractionEnabled = false
+        img.isUserInteractionEnabled = true
         return img
     }()
     
@@ -58,11 +58,16 @@ class MainViewController: UITabBarController {
 
 extension MainViewController: UINavigationControllerDelegate {
     func navigationController(_ navigationController: UINavigationController, willShow viewController: UIViewController, animated: Bool) {
-        <#code#>
+        if viewController.hidesBottomBarWhenPushed {
+            bgImageOfTabBar.isHidden = true
+        }
     }
     
     func navigationController(_ navigationController: UINavigationController, didShow viewController: UIViewController, animated: Bool) {
-        <#code#>
+        tabBar.isHidden = true
+        if !viewController.hidesBottomBarWhenPushed {
+            bgImageOfTabBar.isHidden = false
+        }
     }
 }
 
@@ -78,13 +83,6 @@ extension MainViewController {
             btn.tag = tagplus + index
             btn.frame = CGRect(x: buttonW * CGFloat(index), y: 0, width: buttonW, height: tabbarH)
             btn.adjustsImageWhenHighlighted = false
-            if index == 0 {
-                btn.backgroundColor = UIColor.brown
-            } else if index == 1 {
-                btn.backgroundColor = UIColor.blue
-            } else {
-                btn.backgroundColor = UIColor.cyan
-            }
             btn.setImage(normalIconArray[index], for: .normal)
             btn.setImage(selectedIconArray[index], for: .selected)
             btn.addTarget(self, action: #selector(tabBarItemSelected(_ :)), for: .touchUpInside)
@@ -101,7 +99,7 @@ extension MainViewController {
         tempSubController.append(navigationControllerWith(SubViewController()))
         tempSubController.append(navigationControllerWith(ParentViewController()))
         
-        return tempSubController
+        viewControllers = tempSubController
     }
     
     func navigationControllerWith(_ vc:UIViewController) -> CommonNavigationController {
@@ -109,8 +107,25 @@ extension MainViewController {
         nav.delegate = self
         return nav
     }
-    
+}
+
+extension MainViewController {
     @objc func tabBarItemSelected(_ btn: UIButton) {
-       btn.isSelected = true
+        btn.isSelected = true
+        btn.isUserInteractionEnabled = false
+        for sbtn in bgImageOfTabBar.subviews {
+            guard let xbtn = sbtn as? UIButton else {
+                continue
+            }
+            if xbtn.tag == btn.tag {
+                continue
+            }
+            
+            xbtn.isSelected = false
+            xbtn.isUserInteractionEnabled = true
+        }
+        let btntag = btn.tag - tagplus
+        print(btn.tag)
+        selectedIndex = btntag
     }
 }

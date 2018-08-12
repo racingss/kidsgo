@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		81C47B12256BD21B29F9DFBD /* Pods_kidsgo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB135D9267463E008757F119 /* Pods_kidsgo.framework */; };
+		D73213F3212018A60020B96D /* adverheader.xib in Resources */ = {isa = PBXBuildFile; fileRef = D73213F2212018A60020B96D /* adverheader.xib */; };
+		D73213F521201E080020B96D /* AdverHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D73213F421201E080020B96D /* AdverHeaderView.swift */; };
 		D768CFB7211830CE00E43EAD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D768CFB6211830CE00E43EAD /* AppDelegate.swift */; };
 		D768CFB9211830CE00E43EAD /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D768CFB8211830CE00E43EAD /* MainViewController.swift */; };
 		D768CFBC211830CE00E43EAD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D768CFBA211830CE00E43EAD /* Main.storyboard */; };
@@ -16,9 +19,16 @@
 		D771CFB421198C62008A9D61 /* const.swift in Sources */ = {isa = PBXBuildFile; fileRef = D771CFB321198C62008A9D61 /* const.swift */; };
 		D771CFB6211AE7AD008A9D61 /* CommonNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D771CFB5211AE7AD008A9D61 /* CommonNavigationController.swift */; };
 		D771CFB8211AE97C008A9D61 /* CommonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D771CFB7211AE97C008A9D61 /* CommonViewController.swift */; };
+		D7A22E6F211EDEFA00BAA127 /* SubViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7A22E6E211EDEFA00BAA127 /* SubViewController.swift */; };
+		D7A22E72211EE00C00BAA127 /* ParentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7A22E71211EE00C00BAA127 /* ParentViewController.swift */; };
+		D7ED301C211EC7C700C57B9D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7ED301B211EC7C700C57B9D /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		140F22DD6EF5E5A5B7FF43DD /* Pods-kidsgo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kidsgo.release.xcconfig"; path = "Pods/Target Support Files/Pods-kidsgo/Pods-kidsgo.release.xcconfig"; sourceTree = "<group>"; };
+		B8FA9AC4849DFED115854A00 /* Pods-kidsgo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kidsgo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-kidsgo/Pods-kidsgo.debug.xcconfig"; sourceTree = "<group>"; };
+		D73213F2212018A60020B96D /* adverheader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = adverheader.xib; sourceTree = "<group>"; };
+		D73213F421201E080020B96D /* AdverHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdverHeaderView.swift; sourceTree = "<group>"; };
 		D768CFB3211830CE00E43EAD /* kidsgo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kidsgo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D768CFB6211830CE00E43EAD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D768CFB8211830CE00E43EAD /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -30,6 +40,10 @@
 		D771CFB321198C62008A9D61 /* const.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = const.swift; sourceTree = "<group>"; };
 		D771CFB5211AE7AD008A9D61 /* CommonNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonNavigationController.swift; sourceTree = "<group>"; };
 		D771CFB7211AE97C008A9D61 /* CommonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonViewController.swift; sourceTree = "<group>"; };
+		D7A22E6E211EDEFA00BAA127 /* SubViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubViewController.swift; sourceTree = "<group>"; };
+		D7A22E71211EE00C00BAA127 /* ParentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentViewController.swift; sourceTree = "<group>"; };
+		D7ED301B211EC7C700C57B9D /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		DB135D9267463E008757F119 /* Pods_kidsgo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_kidsgo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,17 +51,46 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81C47B12256BD21B29F9DFBD /* Pods_kidsgo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5D4E28CE4C6C40FC0BEDA260 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B8FA9AC4849DFED115854A00 /* Pods-kidsgo.debug.xcconfig */,
+				140F22DD6EF5E5A5B7FF43DD /* Pods-kidsgo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		851598922646533E7CD08014 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DB135D9267463E008757F119 /* Pods_kidsgo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D73213F12120187B0020B96D /* view */ = {
+			isa = PBXGroup;
+			children = (
+				D73213F2212018A60020B96D /* adverheader.xib */,
+				D73213F421201E080020B96D /* AdverHeaderView.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
 		D768CFAA211830CE00E43EAD = {
 			isa = PBXGroup;
 			children = (
 				D768CFB5211830CE00E43EAD /* kidsgo */,
 				D768CFB4211830CE00E43EAD /* Products */,
+				5D4E28CE4C6C40FC0BEDA260 /* Pods */,
+				851598922646533E7CD08014 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,6 +105,9 @@
 		D768CFB5211830CE00E43EAD /* kidsgo */ = {
 			isa = PBXGroup;
 			children = (
+				D7A22E70211EDFF700BAA127 /* parent */,
+				D7A22E6D211EDEDC00BAA127 /* subcribe */,
+				D7ED301A211EC7A700C57B9D /* home */,
 				D771CFB221198C4D008A9D61 /* common */,
 				D768CFCB2118315800E43EAD /* main */,
 				D768CFC0211830CE00E43EAD /* Assets.xcassets */,
@@ -100,6 +146,31 @@
 			path = common;
 			sourceTree = "<group>";
 		};
+		D7A22E6D211EDEDC00BAA127 /* subcribe */ = {
+			isa = PBXGroup;
+			children = (
+				D7A22E6E211EDEFA00BAA127 /* SubViewController.swift */,
+			);
+			path = subcribe;
+			sourceTree = "<group>";
+		};
+		D7A22E70211EDFF700BAA127 /* parent */ = {
+			isa = PBXGroup;
+			children = (
+				D7A22E71211EE00C00BAA127 /* ParentViewController.swift */,
+			);
+			path = parent;
+			sourceTree = "<group>";
+		};
+		D7ED301A211EC7A700C57B9D /* home */ = {
+			isa = PBXGroup;
+			children = (
+				D73213F12120187B0020B96D /* view */,
+				D7ED301B211EC7C700C57B9D /* HomeViewController.swift */,
+			);
+			path = home;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -107,9 +178,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D768CFC8211830CE00E43EAD /* Build configuration list for PBXNativeTarget "kidsgo" */;
 			buildPhases = (
+				E8CC4A5FB6CD90E4ADDD6947 /* [CP] Check Pods Manifest.lock */,
 				D768CFAF211830CE00E43EAD /* Sources */,
 				D768CFB0211830CE00E43EAD /* Frameworks */,
 				D768CFB1211830CE00E43EAD /* Resources */,
+				F1B3C90C8B8C935A8A4A0D26 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,7 +205,7 @@
 				TargetAttributes = {
 					D768CFB2211830CE00E43EAD = {
 						CreatedOnToolsVersion = 9.2;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -162,10 +235,52 @@
 				D768CFC4211830CE00E43EAD /* LaunchScreen.storyboard in Resources */,
 				D768CFC1211830CE00E43EAD /* Assets.xcassets in Resources */,
 				D768CFBC211830CE00E43EAD /* Main.storyboard in Resources */,
+				D73213F3212018A60020B96D /* adverheader.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E8CC4A5FB6CD90E4ADDD6947 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-kidsgo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F1B3C90C8B8C935A8A4A0D26 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-kidsgo/Pods-kidsgo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SDCycleScrollView/SDCycleScrollView.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDCycleScrollView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-kidsgo/Pods-kidsgo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D768CFAF211830CE00E43EAD /* Sources */ = {
@@ -175,9 +290,13 @@
 				D768CFB9211830CE00E43EAD /* MainViewController.swift in Sources */,
 				D771CFB421198C62008A9D61 /* const.swift in Sources */,
 				D771CFB6211AE7AD008A9D61 /* CommonNavigationController.swift in Sources */,
+				D7A22E6F211EDEFA00BAA127 /* SubViewController.swift in Sources */,
 				D771CFB8211AE97C008A9D61 /* CommonViewController.swift in Sources */,
 				D768CFBF211830CE00E43EAD /* kidsgo.xcdatamodeld in Sources */,
+				D7ED301C211EC7C700C57B9D /* HomeViewController.swift in Sources */,
 				D768CFB7211830CE00E43EAD /* AppDelegate.swift in Sources */,
+				D73213F521201E080020B96D /* AdverHeaderView.swift in Sources */,
+				D7A22E72211EE00C00BAA127 /* ParentViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -312,13 +431,16 @@
 		};
 		D768CFC9211830CE00E43EAD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B8FA9AC4849DFED115854A00 /* Pods-kidsgo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = kidsgo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jeffx.kidsgo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -326,13 +448,16 @@
 		};
 		D768CFCA211830CE00E43EAD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 140F22DD6EF5E5A5B7FF43DD /* Pods-kidsgo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = kidsgo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jeffx.kidsgo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

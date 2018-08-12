@@ -11,6 +11,9 @@ import UIKit
 class CommonNavigationController: UINavigationController {
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationItem.hidesBackButton = true
+        print(navigationBar.alignmentRectInsets.bottom)
+        UIBarButtonItem.appearance().setBackButtonTitlePositionAdjustment(UIOffsetMake(-1000, 0), for: .default)
     }
 }
 
