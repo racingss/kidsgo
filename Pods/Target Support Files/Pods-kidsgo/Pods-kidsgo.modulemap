@@ -1,0 +1,6 @@
+framework module Pods_kidsgo {
+  umbrella header "Pods-kidsgo-umbrella.h"
+
+  export *
+  module * { export * }
+}
