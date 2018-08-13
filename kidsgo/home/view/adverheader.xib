@@ -20,12 +20,14 @@
                     <subviews>
                         <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kjo-Bu-JWR" userLabel="image adver scroll view">
                             <rect key="frame" x="0.0" y="0.0" width="320" height="150"/>
+                            <color key="backgroundColor" red="0.61615813880000003" green="0.85296675870000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="150" id="i5k-E5-Z7F"/>
                             </constraints>
                         </scrollView>
                         <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GNQ-d8-lvz" userLabel="adver scroll view">
                             <rect key="frame" x="0.0" y="150" width="320" height="90"/>
+                            <color key="backgroundColor" red="0.38712057179999998" green="0.53716310690000002" blue="0.63585069439999997" alpha="1" colorSpace="calibratedRGB"/>
                         </scrollView>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -50,8 +52,8 @@
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
-                <outlet property="a" destination="Kjo-Bu-JWR" id="wvu-1v-9oc"/>
-                <outlet property="adverSckr" destination="GNQ-d8-lvz" id="hGk-VR-FfR"/>
+                <outlet property="adverScrollview" destination="GNQ-d8-lvz" id="ckf-7E-iGK"/>
+                <outlet property="imageAdverScrollview" destination="Kjo-Bu-JWR" id="YoG-tm-sfn"/>
             </connections>
         </view>
     </objects>

@@ -10,6 +10,8 @@ import UIKit
 
 class HomeViewController : CommonViewController {
     
+    //tableview header整个视图
+    let headerFrame = CGRect(x: 0, y: 0, width: screenW, height: 294)
     //搜索框
     lazy var subSearchBar : UIView = {[unowned self] in
         let view = UISearchBar()
@@ -24,11 +26,35 @@ class HomeViewController : CommonViewController {
         return view
     }()
     
+    //轮播图视图 + 分类视图
+    let adverHeaderFrame = CGRect(x: 0, y: 44, width: screenW, height: 250)
+    lazy var adverHeaderView:AdverHeaderView = {
+        let adverheader = AdverHeaderView.newInstance()
+        adverheader?.frame = adverHeaderFrame
+        adverheader?.layoutIfNeeded()
+        return adverheader!
+    }()
+    
+    //整个视图是tableview
+    lazy var homwview: UITableView = {
+        [unowned self] in
+        let tableview = UITableView(frame: self.view.frame, style: .plain)
+        tableview.delegate = self
+        tableview.dataSource = self
+        tableview.separatorStyle = .none
+        tableview.tableHeaderView = UIView(frame: self.headerFrame)
+        tableview.tableHeaderView?.addSubview(subSearchBar)
+        tableview.tableHeaderView?.addSubview(self.adverHeaderView)
+        
+        self.view.addSubview(tableview)
+        return tableview
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "卡片点点"
         view.backgroundColor = UIColor(red: 0.5, green: 0.5, blue: 0.5, alpha: 1.0)
-        view.addSubview(subSearchBar)
+        self.homwview.reloadData()
     }
 }
 
@@ -44,4 +70,17 @@ extension HomeViewController : UISearchBarDelegate {
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         print("searching")
     }
+}
+
+extension HomeViewController : UITableViewDelegate, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 2
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell1 = CGRect(x: 0, y: 144, width: screenW, height: 250)
+        return UITableViewCell(frame: cell1)
+    }
+    
+    
 }
