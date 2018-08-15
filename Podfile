@@ -7,4 +7,5 @@ target 'kidsgo' do
 
   # Pods for kidsgo
   pod 'SDCycleScrollView', '~> 1.75'
+  pod 'HandyJSON', '~> 4.1.1'
 end

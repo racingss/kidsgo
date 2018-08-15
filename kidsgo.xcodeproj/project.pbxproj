@@ -22,6 +22,9 @@
 		D7A22E6F211EDEFA00BAA127 /* SubViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7A22E6E211EDEFA00BAA127 /* SubViewController.swift */; };
 		D7A22E72211EE00C00BAA127 /* ParentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7A22E71211EE00C00BAA127 /* ParentViewController.swift */; };
 		D7ED301C211EC7C700C57B9D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7ED301B211EC7C700C57B9D /* HomeViewController.swift */; };
+		D7F7A3232123F94300625810 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F7A3222123F94300625810 /* HomeViewModel.swift */; };
+		D7F7A326212401F000625810 /* AdverHeaderJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F7A325212401F000625810 /* AdverHeaderJSON.swift */; };
+		D7F7A3282124067200625810 /* AdverHeaderImagesJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F7A3272124067200625810 /* AdverHeaderImagesJSON.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +46,9 @@
 		D7A22E6E211EDEFA00BAA127 /* SubViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubViewController.swift; sourceTree = "<group>"; };
 		D7A22E71211EE00C00BAA127 /* ParentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentViewController.swift; sourceTree = "<group>"; };
 		D7ED301B211EC7C700C57B9D /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		D7F7A3222123F94300625810 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		D7F7A325212401F000625810 /* AdverHeaderJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdverHeaderJSON.swift; sourceTree = "<group>"; };
+		D7F7A3272124067200625810 /* AdverHeaderImagesJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdverHeaderImagesJSON.swift; sourceTree = "<group>"; };
 		DB135D9267463E008757F119 /* Pods_kidsgo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_kidsgo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -165,10 +171,29 @@
 		D7ED301A211EC7A700C57B9D /* home */ = {
 			isa = PBXGroup;
 			children = (
+				D7F7A3242123F9A100625810 /* viewmodel */,
+				D7F7A3212123F91A00625810 /* model */,
 				D73213F12120187B0020B96D /* view */,
 				D7ED301B211EC7C700C57B9D /* HomeViewController.swift */,
 			);
 			path = home;
+			sourceTree = "<group>";
+		};
+		D7F7A3212123F91A00625810 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				D7F7A325212401F000625810 /* AdverHeaderJSON.swift */,
+				D7F7A3272124067200625810 /* AdverHeaderImagesJSON.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		D7F7A3242123F9A100625810 /* viewmodel */ = {
+			isa = PBXGroup;
+			children = (
+				D7F7A3222123F94300625810 /* HomeViewModel.swift */,
+			);
+			path = viewmodel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -267,11 +292,13 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-kidsgo/Pods-kidsgo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/HandyJSON/HandyJSON.framework",
 				"${BUILT_PRODUCTS_DIR}/SDCycleScrollView/SDCycleScrollView.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HandyJSON.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDCycleScrollView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 			);
@@ -287,7 +314,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7F7A3282124067200625810 /* AdverHeaderImagesJSON.swift in Sources */,
 				D768CFB9211830CE00E43EAD /* MainViewController.swift in Sources */,
+				D7F7A326212401F000625810 /* AdverHeaderJSON.swift in Sources */,
+				D7F7A3232123F94300625810 /* HomeViewModel.swift in Sources */,
 				D771CFB421198C62008A9D61 /* const.swift in Sources */,
 				D771CFB6211AE7AD008A9D61 /* CommonNavigationController.swift in Sources */,
 				D7A22E6F211EDEFA00BAA127 /* SubViewController.swift in Sources */,

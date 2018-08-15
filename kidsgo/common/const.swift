@@ -8,5 +8,9 @@
 
 import UIKit
 
+//App相关
+let APP_PLACEHOLDER = "卡片点点"
+
+//屏幕大小
 let screenH = UIScreen.main.bounds.height
 let screenW = UIScreen.main.bounds.width

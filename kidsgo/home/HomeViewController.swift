@@ -18,7 +18,7 @@ class HomeViewController : CommonViewController {
         view.frame = CGRect(x: 0, y: 0, width: screenW, height: 44)
         let textFieldInSearchBar = view.value(forKey: "searchField") as? UITextField
         textFieldInSearchBar?.font = UIFont.systemFont(ofSize: 14)
-        view.placeholder = "卡片点点"
+        view.placeholder = APP_PLACEHOLDER
         view.backgroundColor = UIColor.blue
         view.keyboardType = UIKeyboardType.default
         view.showsCancelButton = false
@@ -50,14 +50,25 @@ class HomeViewController : CommonViewController {
         return tableview
     }()
     
+    //viewModel
+    lazy var viewModel:HomeViewModel = {
+        return HomeViewModel()
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "卡片点点"
+        title = APP_PLACEHOLDER
         view.backgroundColor = UIColor(red: 0.5, green: 0.5, blue: 0.5, alpha: 1.0)
         self.homwview.reloadData()
+        viewModel.updateBlock = {
+            [unowned self] in
+            self.adverHeaderView.adverimage = self.viewModel.adverimageurlString
+        }
+        viewModel.refreshDataSource()
     }
 }
 
+//负责控制搜索框
 extension HomeViewController : UISearchBarDelegate {
     func searchBar(_ searchBar: UISearchBar, selectedScopeButtonIndexDidChange selectedScope: Int) {
         print("selected scope")

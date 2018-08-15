@@ -17,6 +17,12 @@ class AdverHeaderView : UIView {
 
     @IBOutlet weak var adverScrollview: UIScrollView!
 
+    var adverimage:[String]! {
+        didSet {
+           setupAdverImage()
+        }
+    }
+    
     class func newInstance() -> AdverHeaderView? {
         let nibView = Bundle.main.loadNibNamed("adverheader", owner: nil, options: nil)
         if let view = nibView?.first as? AdverHeaderView {
@@ -24,4 +30,22 @@ class AdverHeaderView : UIView {
         }
         return nil
     }
+}
+
+extension AdverHeaderView {
+    func setupAdverImage() {
+        _ = imageAdverScrollview.subviews.map {
+            $0.removeFromSuperview()
+        }
+        
+        if let adverimageview = SDCycleScrollView(frame: CGRect(x: 0, y: 0, width: screenW, height: imageAdverHeight), delegate: self, placeholderImage: nil) {
+            adverimageview.showPageControl = true
+            adverimageview.imageURLStringsGroup = adverimage
+            imageAdverScrollview.addSubview(adverimageview)
+        }
+    }
+}
+
+extension AdverHeaderView : SDCycleScrollViewDelegate {
+    
 }
