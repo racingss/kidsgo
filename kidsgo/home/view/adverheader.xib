@@ -12,11 +12,11 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB" userLabel="adver header" customClass="AdverHeaderView" customModule="kidsgo" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="250"/>
+            <rect key="frame" x="0.0" y="0.0" width="320" height="310"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XZs-wb-3KR">
-                    <rect key="frame" x="0.0" y="0.0" width="320" height="240"/>
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="300"/>
                     <subviews>
                         <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kjo-Bu-JWR" userLabel="image adver scroll view">
                             <rect key="frame" x="0.0" y="0.0" width="320" height="150"/>
@@ -25,17 +25,27 @@
                                 <constraint firstAttribute="height" constant="150" id="i5k-E5-Z7F"/>
                             </constraints>
                         </scrollView>
-                        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GNQ-d8-lvz" userLabel="adver scroll view">
+                        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GNQ-d8-lvz" userLabel="category scroll view">
                             <rect key="frame" x="0.0" y="150" width="320" height="90"/>
                             <color key="backgroundColor" red="0.38712057179999998" green="0.53716310690000002" blue="0.63585069439999997" alpha="1" colorSpace="calibratedRGB"/>
+                        </scrollView>
+                        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3nP-eG-YRx" userLabel="level scroll view">
+                            <rect key="frame" x="0.0" y="240" width="320" height="60"/>
+                            <color key="backgroundColor" red="0.93549977139999996" green="1" blue="0.90087394480000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="60" id="hOX-z4-jfY"/>
+                            </constraints>
                         </scrollView>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstAttribute="trailing" secondItem="Kjo-Bu-JWR" secondAttribute="trailing" id="39o-EN-oYr"/>
                         <constraint firstItem="GNQ-d8-lvz" firstAttribute="top" secondItem="XZs-wb-3KR" secondAttribute="top" constant="150" id="4td-Qc-s4H"/>
-                        <constraint firstAttribute="bottom" secondItem="GNQ-d8-lvz" secondAttribute="bottom" id="59d-4l-7gf"/>
+                        <constraint firstAttribute="bottom" secondItem="GNQ-d8-lvz" secondAttribute="bottom" constant="60" id="59d-4l-7gf"/>
                         <constraint firstItem="GNQ-d8-lvz" firstAttribute="leading" secondItem="XZs-wb-3KR" secondAttribute="leading" id="Dx7-nO-P1E"/>
+                        <constraint firstAttribute="trailing" secondItem="3nP-eG-YRx" secondAttribute="trailing" id="Nz2-95-FAh"/>
+                        <constraint firstItem="3nP-eG-YRx" firstAttribute="top" secondItem="Kjo-Bu-JWR" secondAttribute="bottom" constant="90" id="d1E-1G-l0l"/>
+                        <constraint firstItem="3nP-eG-YRx" firstAttribute="leading" secondItem="XZs-wb-3KR" secondAttribute="leading" id="egc-fr-qLz"/>
                         <constraint firstAttribute="trailing" secondItem="GNQ-d8-lvz" secondAttribute="trailing" id="jV4-Fj-MbH"/>
                         <constraint firstItem="Kjo-Bu-JWR" firstAttribute="leading" secondItem="XZs-wb-3KR" secondAttribute="leading" id="kaJ-fV-H3o"/>
                         <constraint firstItem="GNQ-d8-lvz" firstAttribute="top" secondItem="Kjo-Bu-JWR" secondAttribute="bottom" id="opk-q7-c9o"/>
@@ -52,8 +62,9 @@
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
-                <outlet property="adverScrollview" destination="GNQ-d8-lvz" id="ckf-7E-iGK"/>
+                <outlet property="categoryScrollview" destination="GNQ-d8-lvz" id="O6I-Ep-T1S"/>
                 <outlet property="imageAdverScrollview" destination="Kjo-Bu-JWR" id="YoG-tm-sfn"/>
+                <outlet property="levelScrollview" destination="3nP-eG-YRx" id="WVm-TQ-tP4"/>
             </connections>
         </view>
     </objects>

@@ -10,6 +10,10 @@
 		81C47B12256BD21B29F9DFBD /* Pods_kidsgo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB135D9267463E008757F119 /* Pods_kidsgo.framework */; };
 		D73213F3212018A60020B96D /* adverheader.xib in Resources */ = {isa = PBXBuildFile; fileRef = D73213F2212018A60020B96D /* adverheader.xib */; };
 		D73213F521201E080020B96D /* AdverHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D73213F421201E080020B96D /* AdverHeaderView.swift */; };
+		D7608EBE212D3A880002AAB9 /* CategoryModelJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7608EBD212D3A880002AAB9 /* CategoryModelJSON.swift */; };
+		D7608EC0212D43EA0002AAB9 /* CategoryModelDetailJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7608EBF212D43EA0002AAB9 /* CategoryModelDetailJSON.swift */; };
+		D7608EC2212D45490002AAB9 /* categoryIcon.xib in Resources */ = {isa = PBXBuildFile; fileRef = D7608EC1212D45490002AAB9 /* categoryIcon.xib */; };
+		D7608EC4212D4CD00002AAB9 /* CategoryIconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7608EC3212D4CD00002AAB9 /* CategoryIconView.swift */; };
 		D768CFB7211830CE00E43EAD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D768CFB6211830CE00E43EAD /* AppDelegate.swift */; };
 		D768CFB9211830CE00E43EAD /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D768CFB8211830CE00E43EAD /* MainViewController.swift */; };
 		D768CFBC211830CE00E43EAD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D768CFBA211830CE00E43EAD /* Main.storyboard */; };
@@ -32,6 +36,10 @@
 		B8FA9AC4849DFED115854A00 /* Pods-kidsgo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kidsgo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-kidsgo/Pods-kidsgo.debug.xcconfig"; sourceTree = "<group>"; };
 		D73213F2212018A60020B96D /* adverheader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = adverheader.xib; sourceTree = "<group>"; };
 		D73213F421201E080020B96D /* AdverHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdverHeaderView.swift; sourceTree = "<group>"; };
+		D7608EBD212D3A880002AAB9 /* CategoryModelJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryModelJSON.swift; sourceTree = "<group>"; };
+		D7608EBF212D43EA0002AAB9 /* CategoryModelDetailJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryModelDetailJSON.swift; sourceTree = "<group>"; };
+		D7608EC1212D45490002AAB9 /* categoryIcon.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = categoryIcon.xib; sourceTree = "<group>"; };
+		D7608EC3212D4CD00002AAB9 /* CategoryIconView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryIconView.swift; sourceTree = "<group>"; };
 		D768CFB3211830CE00E43EAD /* kidsgo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kidsgo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D768CFB6211830CE00E43EAD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D768CFB8211830CE00E43EAD /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -86,6 +94,8 @@
 			children = (
 				D73213F2212018A60020B96D /* adverheader.xib */,
 				D73213F421201E080020B96D /* AdverHeaderView.swift */,
+				D7608EC1212D45490002AAB9 /* categoryIcon.xib */,
+				D7608EC3212D4CD00002AAB9 /* CategoryIconView.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -184,6 +194,8 @@
 			children = (
 				D7F7A325212401F000625810 /* AdverHeaderJSON.swift */,
 				D7F7A3272124067200625810 /* AdverHeaderImagesJSON.swift */,
+				D7608EBD212D3A880002AAB9 /* CategoryModelJSON.swift */,
+				D7608EBF212D43EA0002AAB9 /* CategoryModelDetailJSON.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -257,6 +269,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7608EC2212D45490002AAB9 /* categoryIcon.xib in Resources */,
 				D768CFC4211830CE00E43EAD /* LaunchScreen.storyboard in Resources */,
 				D768CFC1211830CE00E43EAD /* Assets.xcassets in Resources */,
 				D768CFBC211830CE00E43EAD /* Main.storyboard in Resources */,
@@ -317,6 +330,7 @@
 				D7F7A3282124067200625810 /* AdverHeaderImagesJSON.swift in Sources */,
 				D768CFB9211830CE00E43EAD /* MainViewController.swift in Sources */,
 				D7F7A326212401F000625810 /* AdverHeaderJSON.swift in Sources */,
+				D7608EC4212D4CD00002AAB9 /* CategoryIconView.swift in Sources */,
 				D7F7A3232123F94300625810 /* HomeViewModel.swift in Sources */,
 				D771CFB421198C62008A9D61 /* const.swift in Sources */,
 				D771CFB6211AE7AD008A9D61 /* CommonNavigationController.swift in Sources */,
@@ -325,8 +339,10 @@
 				D768CFBF211830CE00E43EAD /* kidsgo.xcdatamodeld in Sources */,
 				D7ED301C211EC7C700C57B9D /* HomeViewController.swift in Sources */,
 				D768CFB7211830CE00E43EAD /* AppDelegate.swift in Sources */,
+				D7608EBE212D3A880002AAB9 /* CategoryModelJSON.swift in Sources */,
 				D73213F521201E080020B96D /* AdverHeaderView.swift in Sources */,
 				D7A22E72211EE00C00BAA127 /* ParentViewController.swift in Sources */,
+				D7608EC0212D43EA0002AAB9 /* CategoryModelDetailJSON.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

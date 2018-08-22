@@ -12,15 +12,23 @@ import HandyJSON
 class HomeViewModel : NSObject {
     var adverHeader : AdverHeaderJSON!
     var adverimageurlString : [String] = [String]()
+    var categories : [CategoryModelDetailJSON] = [CategoryModelDetailJSON]()
     
     typealias AddBlock = () ->Void;
     var updateBlock = AddBlock?{}
 }
 
+//view model data source
 extension HomeViewModel {
+    //整个home页的数据加载
+    //TODO : 替换成json api
     func refreshDataSource() {
-        let jsonString = "{\"title\":\"CardAdverImage\" , \"list\": [{\"id\":0,\"pic\":\"https://images.pexels.com/photos/983297/pexels-photo-983297.jpeg?auto=compress&cs=tinysrgb&h=650&w=940\"},{\"id\":1,\"pic\":\"https://images.pexels.com/photos/1315891/pexels-photo-1315891.jpeg?auto=compress&cs=tinysrgb&h=650&w=940\"}]}"
-        if let jsonobj = AdverHeaderJSON.deserialize(from: jsonString) {
+        //轮播图json
+        let adverheaderjsonStr = "{\"title\":\"CardAdverImage\" , \"list\": [{\"id\":0,\"pic\":\"https://images.pexels.com/photos/983297/pexels-photo-983297.jpeg?auto=compress&cs=tinysrgb&h=650&w=940\"},{\"id\":1,\"pic\":\"https://images.pexels.com/photos/1315891/pexels-photo-1315891.jpeg?auto=compress&cs=tinysrgb&h=650&w=940\"}]}"
+        //分类json
+        let categoryjsonStr = "{\"id\":0, \"title\":\"category\" ,\"list\":[{\"id\":0, \"pic\":\"http://www.suyufuwu.com/diandian/frame/h_1.png\", \"title\":\"生活\"},{\"id\":1, \"pic\":\"http://www.suyufuwu.com/diandian/frame/h_2.png\", \"title\":\"科学\"},{\"id\":2, \"pic\":\"http://www.suyufuwu.com/diandian/frame/h_3.png\", \"title\":\"自然\"},{\"id\":3, \"pic\":\"http://www.suyufuwu.com/diandian/frame/h_4.png\", \"title\":\"艺术\"},{\"id\":4, \"pic\":\"http://www.suyufuwu.com/diandian/frame/h_5.png\", \"title\":\"社会\"}]}"
+        
+        if let jsonobj = AdverHeaderJSON.deserialize(from: adverheaderjsonStr) {
             self.adverHeader = jsonobj
             if let images = jsonobj.list {
                 for image in images {
@@ -29,6 +37,12 @@ extension HomeViewModel {
             }
         } else {
             self.adverHeader = nil
+        }
+        
+        if let jsonobj = CategoryModelJSON.deserialize(from: categoryjsonStr) {
+            self.categories = jsonobj.list!
+        } else {
+            NSLog("category is empty")
         }
         self.updateBlock!()
     }

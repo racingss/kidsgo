@@ -26,7 +26,7 @@ class HomeViewController : CommonViewController {
         return view
     }()
     
-    //轮播图视图 + 分类视图
+    //轮播图视图 + 分类视图 + 等级视图
     let adverHeaderFrame = CGRect(x: 0, y: 44, width: screenW, height: 250)
     lazy var adverHeaderView:AdverHeaderView = {
         let adverheader = AdverHeaderView.newInstance()
@@ -36,7 +36,7 @@ class HomeViewController : CommonViewController {
     }()
     
     //整个视图是tableview
-    lazy var homwview: UITableView = {
+    lazy var homeview: UITableView = {
         [unowned self] in
         let tableview = UITableView(frame: self.view.frame, style: .plain)
         tableview.delegate = self
@@ -59,10 +59,11 @@ class HomeViewController : CommonViewController {
         super.viewDidLoad()
         title = APP_PLACEHOLDER
         view.backgroundColor = UIColor(red: 0.5, green: 0.5, blue: 0.5, alpha: 1.0)
-        self.homwview.reloadData()
+        self.homeview.reloadData()
         viewModel.updateBlock = {
             [unowned self] in
-            self.adverHeaderView.adverimage = self.viewModel.adverimageurlString
+            self.adverHeaderView.imageAdver = self.viewModel.adverimageurlString
+            self.adverHeaderView.categories = self.viewModel.categories
         }
         viewModel.refreshDataSource()
     }
