@@ -12,35 +12,35 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CategoryIconView" customModule="kidsgo" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="60" height="80"/>
+            <rect key="frame" x="0.0" y="0.0" width="75" height="60"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f9y-uD-7Jq">
-                    <rect key="frame" x="0.0" y="60" width="60" height="20"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f9y-uD-7Jq">
+                    <rect key="frame" x="0.0" y="43" width="75" height="17"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <color key="textColor" red="0.38830503687025186" green="0.57502833554145083" blue="0.46832568936948343" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jYc-2G-L29">
-                    <rect key="frame" x="10" y="10" width="40" height="40"/>
+                    <rect key="frame" x="17" y="8" width="40" height="32"/>
                 </imageView>
             </subviews>
             <color key="backgroundColor" red="0.7397465636431837" green="1" blue="0.6798499142984431" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstAttribute="bottom" secondItem="f9y-uD-7Jq" secondAttribute="bottom" id="8nn-na-ozC"/>
-                <constraint firstItem="jYc-2G-L29" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="ZKO-gS-fNr"/>
-                <constraint firstItem="jYc-2G-L29" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="gBN-Se-nT6"/>
-                <constraint firstItem="f9y-uD-7Jq" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="pmR-1c-bR1"/>
-                <constraint firstAttribute="trailing" secondItem="f9y-uD-7Jq" secondAttribute="trailing" id="vFl-ua-P1o"/>
-                <constraint firstAttribute="trailing" secondItem="jYc-2G-L29" secondAttribute="trailing" constant="10" id="wov-zQ-Cmj"/>
-                <constraint firstItem="f9y-uD-7Jq" firstAttribute="top" secondItem="jYc-2G-L29" secondAttribute="bottom" constant="10" id="zAK-8D-Nxx"/>
+                <constraint firstAttribute="trailing" secondItem="f9y-uD-7Jq" secondAttribute="trailing" id="H4j-0q-TRZ"/>
+                <constraint firstItem="f9y-uD-7Jq" firstAttribute="top" secondItem="jYc-2G-L29" secondAttribute="bottom" constant="5" id="JfY-X8-Aj4"/>
+                <constraint firstItem="f9y-uD-7Jq" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="KZK-Kn-LiS"/>
+                <constraint firstAttribute="bottom" secondItem="f9y-uD-7Jq" secondAttribute="bottom" id="V7X-BK-CIA"/>
+                <constraint firstAttribute="trailing" secondItem="jYc-2G-L29" secondAttribute="trailing" constant="18" id="YKM-IL-rge"/>
+                <constraint firstItem="jYc-2G-L29" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="jKV-BA-3Si"/>
+                <constraint firstItem="jYc-2G-L29" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="17" id="xzY-lZ-wAH"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
                 <outlet property="iconImage" destination="jYc-2G-L29" id="7q0-Yf-OLm"/>
                 <outlet property="label" destination="f9y-uD-7Jq" id="mwS-Ya-PUO"/>
             </connections>
-            <point key="canvasLocation" x="-55" y="290"/>
+            <point key="canvasLocation" x="-72.5" y="145"/>
         </view>
     </objects>
 </document>

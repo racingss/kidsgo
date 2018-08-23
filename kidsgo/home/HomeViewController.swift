@@ -8,10 +8,12 @@
 
 import UIKit
 
+let homeViewh:CGFloat = 290
+
 class HomeViewController : CommonViewController {
     
     //tableview header整个视图
-    let headerFrame = CGRect(x: 0, y: 0, width: screenW, height: 294)
+    let headerFrame = CGRect(x: 0, y: 0, width: screenW, height: homeViewh + 44)
     //搜索框
     lazy var subSearchBar : UIView = {[unowned self] in
         let view = UISearchBar()
@@ -27,7 +29,7 @@ class HomeViewController : CommonViewController {
     }()
     
     //轮播图视图 + 分类视图 + 等级视图
-    let adverHeaderFrame = CGRect(x: 0, y: 44, width: screenW, height: 250)
+    let adverHeaderFrame = CGRect(x: 0, y: 44, width: screenW, height: homeViewh)
     lazy var adverHeaderView:AdverHeaderView = {
         let adverheader = AdverHeaderView.newInstance()
         adverheader?.frame = adverHeaderFrame

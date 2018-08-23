@@ -11,8 +11,8 @@ import SDCycleScrollView
 
 // 广告图片轮播视图高度
 let imageAdverHeight:CGFloat = 150
-let iconViewW:Double = 60
-let iconViewH:Double = 80
+let iconViewW:Double = 75
+let iconViewH:Double = 60
 
 //整个header view (轮播图+分类视图+等级视图)
 class AdverHeaderView : UIView {
