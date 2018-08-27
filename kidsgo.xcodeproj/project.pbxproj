@@ -14,6 +14,7 @@
 		D7608EC0212D43EA0002AAB9 /* CategoryModelDetailJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7608EBF212D43EA0002AAB9 /* CategoryModelDetailJSON.swift */; };
 		D7608EC2212D45490002AAB9 /* categoryIcon.xib in Resources */ = {isa = PBXBuildFile; fileRef = D7608EC1212D45490002AAB9 /* categoryIcon.xib */; };
 		D7608EC4212D4CD00002AAB9 /* CategoryIconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7608EC3212D4CD00002AAB9 /* CategoryIconView.swift */; };
+		D7608EC62133DBDA0002AAB9 /* LevelModelJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7608EC52133DBDA0002AAB9 /* LevelModelJSON.swift */; };
 		D768CFB7211830CE00E43EAD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D768CFB6211830CE00E43EAD /* AppDelegate.swift */; };
 		D768CFB9211830CE00E43EAD /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D768CFB8211830CE00E43EAD /* MainViewController.swift */; };
 		D768CFBC211830CE00E43EAD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D768CFBA211830CE00E43EAD /* Main.storyboard */; };
@@ -40,6 +41,7 @@
 		D7608EBF212D43EA0002AAB9 /* CategoryModelDetailJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryModelDetailJSON.swift; sourceTree = "<group>"; };
 		D7608EC1212D45490002AAB9 /* categoryIcon.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = categoryIcon.xib; sourceTree = "<group>"; };
 		D7608EC3212D4CD00002AAB9 /* CategoryIconView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryIconView.swift; sourceTree = "<group>"; };
+		D7608EC52133DBDA0002AAB9 /* LevelModelJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelModelJSON.swift; sourceTree = "<group>"; };
 		D768CFB3211830CE00E43EAD /* kidsgo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kidsgo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D768CFB6211830CE00E43EAD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D768CFB8211830CE00E43EAD /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -196,6 +198,7 @@
 				D7F7A3272124067200625810 /* AdverHeaderImagesJSON.swift */,
 				D7608EBD212D3A880002AAB9 /* CategoryModelJSON.swift */,
 				D7608EBF212D43EA0002AAB9 /* CategoryModelDetailJSON.swift */,
+				D7608EC52133DBDA0002AAB9 /* LevelModelJSON.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -333,6 +336,7 @@
 				D7608EC4212D4CD00002AAB9 /* CategoryIconView.swift in Sources */,
 				D7F7A3232123F94300625810 /* HomeViewModel.swift in Sources */,
 				D771CFB421198C62008A9D61 /* const.swift in Sources */,
+				D7608EC62133DBDA0002AAB9 /* LevelModelJSON.swift in Sources */,
 				D771CFB6211AE7AD008A9D61 /* CommonNavigationController.swift in Sources */,
 				D7A22E6F211EDEFA00BAA127 /* SubViewController.swift in Sources */,
 				D771CFB8211AE97C008A9D61 /* CommonViewController.swift in Sources */,

@@ -31,6 +31,12 @@ class AdverHeaderView : UIView {
         }
     }
     
+    var levels : [String]! {
+        didSet {
+            setupLevel()
+        }
+    }
+    
     class func newInstance() -> AdverHeaderView? {
         let nibView = Bundle.main.loadNibNamed("adverheader", owner: nil, options: nil)
         if let view = nibView?.first as? AdverHeaderView {
@@ -71,6 +77,27 @@ extension AdverHeaderView {
                 iconView.model = detail
                 categoryScrollview.addSubview(iconView)
             }
+        }
+    }
+    
+    func setupLevel() {
+        _ = levelScrollview.subviews.map{
+            $0.removeFromSuperview()
+        }
+        
+        //Setup level buttons
+        let levelCounts:Double = Double(levels.count)
+        if levelCounts == 0 {
+            return
+        }
+        levelScrollview.contentSize = CGSize(width: 50*levelCounts, height: 60)
+        for index in 0..<levels.count {
+            let title:String = levels[index]
+            let levelbutton = UIButton(frame: CGRect(x: Double(index)*80, y: 0, width: 70, height: 60))
+            levelbutton.setTitle(title, for: .normal)
+            levelbutton.setTitleColor(UIColor.darkGray, for: .normal)
+            levelbutton.backgroundColor = UIColor.blue
+            levelScrollview.addSubview(levelbutton)
         }
     }
 }

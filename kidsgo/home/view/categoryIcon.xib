@@ -21,8 +21,8 @@
                     <color key="textColor" red="0.38830503687025186" green="0.57502833554145083" blue="0.46832568936948343" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jYc-2G-L29">
-                    <rect key="frame" x="17" y="8" width="40" height="32"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jYc-2G-L29">
+                    <rect key="frame" x="17" y="3" width="40" height="35"/>
                 </imageView>
             </subviews>
             <color key="backgroundColor" red="0.7397465636431837" green="1" blue="0.6798499142984431" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -32,7 +32,7 @@
                 <constraint firstItem="f9y-uD-7Jq" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="KZK-Kn-LiS"/>
                 <constraint firstAttribute="bottom" secondItem="f9y-uD-7Jq" secondAttribute="bottom" id="V7X-BK-CIA"/>
                 <constraint firstAttribute="trailing" secondItem="jYc-2G-L29" secondAttribute="trailing" constant="18" id="YKM-IL-rge"/>
-                <constraint firstItem="jYc-2G-L29" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="jKV-BA-3Si"/>
+                <constraint firstItem="jYc-2G-L29" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="3" id="jKV-BA-3Si"/>
                 <constraint firstItem="jYc-2G-L29" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="17" id="xzY-lZ-wAH"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>

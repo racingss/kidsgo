@@ -66,6 +66,7 @@ class HomeViewController : CommonViewController {
             [unowned self] in
             self.adverHeaderView.imageAdver = self.viewModel.adverimageurlString
             self.adverHeaderView.categories = self.viewModel.categories
+            self.adverHeaderView.levels = self.viewModel.levels
         }
         viewModel.refreshDataSource()
     }
