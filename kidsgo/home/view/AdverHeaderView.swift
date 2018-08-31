@@ -90,10 +90,13 @@ extension AdverHeaderView {
         if levelCounts == 0 {
             return
         }
-        levelScrollview.contentSize = CGSize(width: 50*levelCounts, height: 60)
+        levelScrollview.contentSize = CGSize(width: 110*levelCounts, height: 60)
+        levelScrollview.contentInset = UIEdgeInsets(top: 5, left: 5, bottom: 5, right: 5)
+        levelScrollview.isPagingEnabled = true
         for index in 0..<levels.count {
             let title:String = levels[index]
-            let levelbutton = UIButton(frame: CGRect(x: Double(index)*80, y: 0, width: 70, height: 60))
+            let levelbutton = UIButton(frame: CGRect(x: Double(index)*120, y: 0, width: 110, height: 60))
+            levelbutton.layer.cornerRadius = 7
             levelbutton.setTitle(title, for: .normal)
             levelbutton.setTitleColor(UIColor.darkGray, for: .normal)
             levelbutton.backgroundColor = UIColor.blue

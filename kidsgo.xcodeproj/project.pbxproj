@@ -15,6 +15,9 @@
 		D7608EC2212D45490002AAB9 /* categoryIcon.xib in Resources */ = {isa = PBXBuildFile; fileRef = D7608EC1212D45490002AAB9 /* categoryIcon.xib */; };
 		D7608EC4212D4CD00002AAB9 /* CategoryIconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7608EC3212D4CD00002AAB9 /* CategoryIconView.swift */; };
 		D7608EC62133DBDA0002AAB9 /* LevelModelJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7608EC52133DBDA0002AAB9 /* LevelModelJSON.swift */; };
+		D7608EC821368A4D0002AAB9 /* CardListModelJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7608EC721368A4D0002AAB9 /* CardListModelJSON.swift */; };
+		D7608ECA21368AB70002AAB9 /* CardModelJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7608EC921368AB70002AAB9 /* CardModelJSON.swift */; };
+		D7608ECC2137C4A70002AAB9 /* mostFavoriteCards.xib in Resources */ = {isa = PBXBuildFile; fileRef = D7608ECB2137C4A70002AAB9 /* mostFavoriteCards.xib */; };
 		D768CFB7211830CE00E43EAD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D768CFB6211830CE00E43EAD /* AppDelegate.swift */; };
 		D768CFB9211830CE00E43EAD /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D768CFB8211830CE00E43EAD /* MainViewController.swift */; };
 		D768CFBC211830CE00E43EAD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D768CFBA211830CE00E43EAD /* Main.storyboard */; };
@@ -42,6 +45,9 @@
 		D7608EC1212D45490002AAB9 /* categoryIcon.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = categoryIcon.xib; sourceTree = "<group>"; };
 		D7608EC3212D4CD00002AAB9 /* CategoryIconView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryIconView.swift; sourceTree = "<group>"; };
 		D7608EC52133DBDA0002AAB9 /* LevelModelJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelModelJSON.swift; sourceTree = "<group>"; };
+		D7608EC721368A4D0002AAB9 /* CardListModelJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardListModelJSON.swift; sourceTree = "<group>"; };
+		D7608EC921368AB70002AAB9 /* CardModelJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardModelJSON.swift; sourceTree = "<group>"; };
+		D7608ECB2137C4A70002AAB9 /* mostFavoriteCards.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = mostFavoriteCards.xib; sourceTree = "<group>"; };
 		D768CFB3211830CE00E43EAD /* kidsgo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kidsgo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D768CFB6211830CE00E43EAD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D768CFB8211830CE00E43EAD /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -98,6 +104,7 @@
 				D73213F421201E080020B96D /* AdverHeaderView.swift */,
 				D7608EC1212D45490002AAB9 /* categoryIcon.xib */,
 				D7608EC3212D4CD00002AAB9 /* CategoryIconView.swift */,
+				D7608ECB2137C4A70002AAB9 /* mostFavoriteCards.xib */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -199,6 +206,8 @@
 				D7608EBD212D3A880002AAB9 /* CategoryModelJSON.swift */,
 				D7608EBF212D43EA0002AAB9 /* CategoryModelDetailJSON.swift */,
 				D7608EC52133DBDA0002AAB9 /* LevelModelJSON.swift */,
+				D7608EC721368A4D0002AAB9 /* CardListModelJSON.swift */,
+				D7608EC921368AB70002AAB9 /* CardModelJSON.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -274,6 +283,7 @@
 			files = (
 				D7608EC2212D45490002AAB9 /* categoryIcon.xib in Resources */,
 				D768CFC4211830CE00E43EAD /* LaunchScreen.storyboard in Resources */,
+				D7608ECC2137C4A70002AAB9 /* mostFavoriteCards.xib in Resources */,
 				D768CFC1211830CE00E43EAD /* Assets.xcassets in Resources */,
 				D768CFBC211830CE00E43EAD /* Main.storyboard in Resources */,
 				D73213F3212018A60020B96D /* adverheader.xib in Resources */,
@@ -333,6 +343,7 @@
 				D7F7A3282124067200625810 /* AdverHeaderImagesJSON.swift in Sources */,
 				D768CFB9211830CE00E43EAD /* MainViewController.swift in Sources */,
 				D7F7A326212401F000625810 /* AdverHeaderJSON.swift in Sources */,
+				D7608ECA21368AB70002AAB9 /* CardModelJSON.swift in Sources */,
 				D7608EC4212D4CD00002AAB9 /* CategoryIconView.swift in Sources */,
 				D7F7A3232123F94300625810 /* HomeViewModel.swift in Sources */,
 				D771CFB421198C62008A9D61 /* const.swift in Sources */,
@@ -347,6 +358,7 @@
 				D73213F521201E080020B96D /* AdverHeaderView.swift in Sources */,
 				D7A22E72211EE00C00BAA127 /* ParentViewController.swift in Sources */,
 				D7608EC0212D43EA0002AAB9 /* CategoryModelDetailJSON.swift in Sources */,
+				D7608EC821368A4D0002AAB9 /* CardListModelJSON.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -29,7 +29,7 @@
                             <rect key="frame" x="0.0" y="150" width="320" height="60"/>
                             <color key="backgroundColor" red="0.38712057179999998" green="0.53716310690000002" blue="0.63585069439999997" alpha="1" colorSpace="calibratedRGB"/>
                         </scrollView>
-                        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3nP-eG-YRx" userLabel="level scroll view">
+                        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3nP-eG-YRx" userLabel="level scroll view">
                             <rect key="frame" x="0.0" y="210" width="320" height="70"/>
                             <color key="backgroundColor" red="0.93549977139999996" green="1" blue="0.90087394480000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <constraints>
